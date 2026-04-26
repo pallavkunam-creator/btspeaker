@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.kdev.btspeaker'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.kdev.btspeaker"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+            applicationIdSuffix ""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // No external dependencies needed
+}
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BT Speaker</string>
+</resources>
